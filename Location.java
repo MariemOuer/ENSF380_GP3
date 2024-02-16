@@ -5,12 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 
 import edu.ucalgary.oop.DisasterVictim;
+import edu.ucalgary.oop.Supply;
 
 public class Location {
     private String name;
 	private String address;
-	private List<DisasterVictim> occupants;
-	private List<Supply> supplies;
+	private ArrayList<DisasterVictim> occupants;
+	private ArrayList<Supply> supplies;
 	
 	public Location(String name, String address){
 		this.name = name;
@@ -35,20 +36,20 @@ public class Location {
 		this.address = address;
 	}
 	
-	public DisasterVictim[] getOccupants(){
-		return occupants.toArray(new DisasterVictim[0]);
+	public ArrayList<DisasterVictim> getOccupants(){
+		return occupants;
 	}
 	
-	public void setOccupants(DisasterVictim[] occupants){
-		this.occupants = Arrays.asList(occupants);
+	public void setOccupants(ArrayList<DisasterVictim> occupants){
+		this.occupants = occupants;
 	}
 	
-	public Supply[] getSupplies(){
-		return supplies.toArray(new Supply[0]);
+	public ArrayList<Supply> getSupplies(){
+		return supplies;
 	}
 	
-	public void setSupplies(Supply[] supplies){
-		this.supplies = Arrays.asList(supplies);
+	public void setSupplies(ArrayList<Supply> supplies){
+		this.supplies = supplies;
 	}
 	
 	public void addOccupant(DisasterVictim occupant){
