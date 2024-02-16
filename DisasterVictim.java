@@ -29,7 +29,6 @@ public class DisasterVictim {
         this.personalBelongings = new ArrayList<>();
     }
 
-    // Getters and Setters
     public String getFirstName() {
         return firstName;
     }
