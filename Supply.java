@@ -10,11 +10,11 @@ public class Supply {
 	}
 
 	public String getType() {
-		return type;
+		return this.type;
 	}
 
-    public String getQuantity() {
-		return type;
+    public int getQuantity() {
+		return this.quantity;
 	}
 
     public void setType(String type) {

@@ -5,25 +5,25 @@ public class MedicalRecord {
 	private String dateOfTreatment;
     private Location location;
 	
-	public MedicalRecord(String treatmentDetails, String dateOfTreatment, location Location) {
+	public MedicalRecord(String treatmentDetails, String dateOfTreatment, Location location) {
 		this.treatmentDetails = treatmentDetails;
 		this.dateOfTreatment = dateOfTreatment;
         this.location = location;
 	}
 
 	public String getLocation() {
-		return location;
+		return this.location;
 	}
 
     public String getTreatmentDetails() {
-		return treatmentDetails;
+		return this.treatmentDetails;
 	}
 
-    public String geDateOfTreatment() {
-		return dateOfTreatment;
+    public String getDateOfTreatment() {
+		return this.dateOfTreatment;
 	}
 
-    public void setLocation(Location location) {
+    public Location setLocation(Location location) {
         this.location = location;
     }
 
